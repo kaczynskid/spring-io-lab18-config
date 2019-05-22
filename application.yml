@@ -25,3 +25,10 @@ management:
         enabled: false
       graphite:
         enabled: false
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: "http://localhost:9010/eureka"
