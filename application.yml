@@ -2,3 +2,19 @@ common:
   property: common value
 some:
   property: common value
+
+management:
+  endpoints:
+    web:
+      base-path: "/admin"
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "always"
+  metrics:
+    export:
+      jmx:
+        enabled: false
+      graphite:
+        enabled: false
