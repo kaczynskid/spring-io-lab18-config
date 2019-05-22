@@ -3,6 +3,13 @@ common:
 some:
   property: common value
 
+spring:
+  cloud:
+    # org.springframework.cloud.bootstrap.config.PropertySourceBootstrapProperties
+    config:
+      # allow command line properties & environment variables to take precedence over this config
+      override-system-properties: false
+
 management:
   endpoints:
     web:
