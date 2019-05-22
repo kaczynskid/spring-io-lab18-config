@@ -29,6 +29,9 @@ management:
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
+    prefer-ip-address: true
+    health-check-url-path: "/admin/health"
+    status-page-url-path: "/admin/info"
   client:
     serviceUrl:
       defaultZone: "http://localhost:9010/eureka"
