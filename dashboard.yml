@@ -1,2 +1,9 @@
 server:
   port: 9020
+
+turbine:
+  appConfig: store,gateway
+  clusterNameExpression: "'default'"
+  instanceUrlSuffix: "admin/hystrix.stream"
+  combineHostPort: true
+  instanceInsertPort: true
